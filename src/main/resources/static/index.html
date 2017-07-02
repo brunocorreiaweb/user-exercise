@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Exercise</title>
+    <!-- BMC Comment: download from http://fengyuanchen.github.io/datepicker/-->
+    <link rel="stylesheet" type="text/css" href="css/clientlibs/datepicker.css">
+</head>
+<body>
+<!-- BMC Comment: download from https://jquery.com/-->
+<script src="js/clientlibs/jquery-3.2.1.js"></script>
+<!-- BMC Comment: download from http://fengyuanchen.github.io/datepicker/-->
+<script src="js/clientlibs/datepicker.js"></script>
+
+<!-- BMC Comment: Sorry for the ugly UI, not an UX expert-->
+<h2>Create user</h2>
+<div id="createUser">
+    <!-- BMC Comment: This labels should be store in i18n files! -->
+    Name: <input type="text" id="name"/>
+    Date of birth: <input data-toggle="datepicker" id="dob"/>
+    <input type="button" value="Create" id="createButton"/>
+</div>
+
+<h2>Current users</h2>
+<div id="listOfUsers"></div>
+<div id="createErrorMessages"></div>
+<script src="js/user.js"></script>
+</body>
+</html>
